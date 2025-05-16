@@ -1,0 +1,114 @@
+[
+  {
+    "ContainingType": "vanderlande_api.Controllers.TrendController",
+    "Method": "UpdateTrend",
+    "RelativePath": "api",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "trend",
+        "Type": "Core.Trend",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "vanderlande_api.Controllers.TrendController",
+    "Method": "GetTrendById",
+    "RelativePath": "api/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Core.Trend",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "vanderlande_api.Controllers.TrendController",
+    "Method": "DeleteTrend",
+    "RelativePath": "api/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "vanderlande_api.Controllers.TrendController",
+    "Method": "CreateTrend",
+    "RelativePath": "api/CreateTrend",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "trend",
+        "Type": "Core.Trend",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "vanderlande_api.Controllers.TrendController",
+    "Method": "GetTrends",
+    "RelativePath": "api/GetTrends",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Core.Trend, Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

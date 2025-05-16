@@ -4,34 +4,44 @@ using Microsoft.AspNetCore.Mvc;
 namespace vanderlande_api.Controllers
 {
     [ApiController]
-    [Route("api/")]
+    [Route("api")]
     public class TrendController : Controller
     {
+        ITrendRepo repo;
+
+        public TrendController(ITrendRepo repo)
+        {
+            this.repo = repo;
+        }
+
+        [HttpGet("GetTrends")]
         public List<Trend> GetTrends()
         {
-            List<Trend> trends = new List<Trend>();
-            return trends;
+            return repo.GetTrends();
         }
 
+        [HttpGet("{id}")]
         public Trend GetTrendById(int id)
         {
-            Trend trend = new();
-            return trend;
+            return repo.GetTrendById(id);
         }
 
-        public void CreateTrend()
+        [HttpPost("CreateTrend")]
+        public void CreateTrend(Trend trend)
         {
-
+            repo.CreateTrend(trend);
         }
 
+        [HttpPut]
         public void UpdateTrend(Trend trend)
         {
-
+            repo.UpdateTrend(trend);
         }
 
-        public void DeleteTrend()
+        [HttpDelete("{id}")]
+        public void DeleteTrend(int id)
         {
-
+            repo.DeleteTrend(id);
         }
     }
 }
