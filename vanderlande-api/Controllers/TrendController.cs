@@ -4,17 +4,17 @@ using Microsoft.AspNetCore.Mvc;
 namespace vanderlande_api.Controllers
 {
     [ApiController]
-    [Route("api")]
-    public class TrendController : Controller
+    [Route("api/[controller]")]
+    public class TrendController : ControllerBase
     {
-        ITrendRepo repo;
+        private ITrendRepo repo;
 
         public TrendController(ITrendRepo repo)
         {
             this.repo = repo;
         }
 
-        [HttpGet("GetTrends")]
+        [HttpGet]
         public List<Trend> GetTrends()
         {
             return repo.GetTrends();
@@ -26,9 +26,10 @@ namespace vanderlande_api.Controllers
             return repo.GetTrendById(id);
         }
 
-        [HttpPost("CreateTrend")]
+        [HttpPost]
         public void CreateTrend(Trend trend)
         {
+            trend.id = null;
             repo.CreateTrend(trend);
         }
 
