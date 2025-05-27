@@ -10,7 +10,7 @@ namespace DAL
             var optionsBuilder = new DbContextOptionsBuilder<TrendContext>();
 
             // Replace this with your actual local or dev connection string
-            optionsBuilder.UseSqlServer("Server=mssqlstud.fhict.local;Database=dbi525146_trends;User Id=dbi525146_trends;Password=trends;");
+            optionsBuilder.UseNpgsql("postgresql://dbi525146_trends:G7EAbSmFlZ3n7tTpw0oT8hWSSWAsykRq@dpg-d0qnu0jipnbc73eic3i0-a/trenddatabase");
 
             return new TrendContext(optionsBuilder.Options);
         }

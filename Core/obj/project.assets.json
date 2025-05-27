@@ -587,11 +587,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Git\\vanderlande-api\\Core\\Core.csproj",
+      "projectUniqueName": "C:\\Git\\temp\\Core\\Core.csproj",
       "projectName": "Core",
-      "projectPath": "C:\\Git\\vanderlande-api\\Core\\Core.csproj",
+      "projectPath": "C:\\Git\\temp\\Core\\Core.csproj",
       "packagesPath": "C:\\Users\\mauri\\.nuget\\packages\\",
-      "outputPath": "C:\\Git\\vanderlande-api\\Core\\obj\\",
+      "outputPath": "C:\\Git\\temp\\Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\mauri\\AppData\\Roaming\\NuGet\\NuGet.Config",
