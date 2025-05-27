@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("vanderlande-api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a6c5dad167f10fb2f23658a6c5cc159e37e23385")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dd6258a5c2c8fb0c4bc3531b3e968b2302cc3cc4")]
 [assembly: System.Reflection.AssemblyProductAttribute("vanderlande-api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("vanderlande-api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
